@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 
 class EncryptorTest {
 
+	
 	@Test
 	void testEncryptOneCharacter() {
 		assertEquals("c", Encryptor.encrypt("a"));
@@ -18,6 +19,10 @@ class EncryptorTest {
 	}
 	
 	// Exercise: decrypt this sentence: Nkxg"nqpi"cpf"rtqurgt#
+	@Test
+	void testDecrypt() throws Exception {
+		assertEquals("Live long and prosper!", Encryptor.Decrypt("Nkxg\"nqpi\"cpf\"rtqurgt#"));
+	}
 	
 	
 }
