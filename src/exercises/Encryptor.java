@@ -12,5 +12,16 @@ public class Encryptor {
 		}
 		return builder.toString();
 	}
+	public static String decrypt(String decrypting) {
+		StringBuilder builder = new StringBuilder();
+		for (int i = 0; i < decrypting.length(); i++) {
+			int numericalValue = decrypting.charAt(i);
+			numericalValue -= 2;
+			builder.append((char) numericalValue);
+		}
+		return builder.toString();
+	}
+
+	
 
 }
