@@ -81,7 +81,7 @@ public class Hangman extends KeyAdapter {
 		if (lives == 0) {
 
 			playDeathKnell();
-			System.out.println("Sorry,you lose! Try again.");
+			System.out.println("You lost.Try again.");
 			correctBox = 0;
 			stopMusic();
 			loadNextPuzzle();
